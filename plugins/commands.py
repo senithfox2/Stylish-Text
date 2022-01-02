@@ -8,22 +8,36 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 @Client.on_message(filters.command('start'))
 async def start(c, m):
     owner = await c.get_users(int(Config.OWNER_ID))
-    owner_username = owner.username if owner.username else 'Ns_bot_updates'
+    owner_username = owner.username if owner.username else 'senith_0831'
 
     # start text
-    text = f"""Hey! {m.from_user.mention(style='md')},
+    text = f"""ආයුබෝවන්!!!! 🙏🙏🙏 {m.from_user.mention(style='md')},
 
-💡 ** I am Stylish Font Bot**
+** I am Stylish Font Bot ✍️**
 
-`I can help you to get stylish fonts. Just send me some text and see magic.`
+**මට පුලුවන් ඔයාගේ වචන වල තේමාව වෙනස් කරන්න . \n ඔයාට කරන්න තියෙන්නෙ අදාළ වචනය හෝ වචන ටික මට එවන එක විතරයි .
 
-**👲 Maintained By:** {owner.mention(style='md')}
+** දැනට මාස් සතුව වචන තේමා[word fronts] 40  ක් පමණ පවතිනවා
+
+**<b>මම ඔයාලට උදව්වක් කරානම් ඒ ගැන ඔයාගේ අදහස දක්වන්න කියලා මම ඔයගෙන් කාරුණිකව ඉල්ලා සිටිනවා</b>
+
+**send your comments @senithlokitha_chat_bot
+
+** Developer by :** ❤️ ▷ [@Drfoxprojects]
 """
 
     # Buttons
     buttons = [
         [
-            InlineKeyboardButton('My Father 👨‍✈️', url=f"https://t.me/{owner_username}")
+            InlineKeyboardButton('👥 Group', url=f"https://t.me/senithlokithatk"),
+            InlineKeyboardButton('Channel 📢', url=f"https://t.me/Drfoxprojects")
+            ],[
+            InlineKeyboardButton('❤️ Credits', url=f"https://t.me/senith_0831"),
+            InlineKeyboardButton('GitHup 🤣', url=f"https://github.com/senithfox2")
+            ],[
+            InlineKeyboardButton('⚜️ vist my web site ⚜️', url=f"http://www.senithlokitha.tk")
+            ],[
+            InlineKeyboardButton('❌report bug errors❌', url=f"https://t.me/senithlokitha_chat_bot")    
         ]
     ]
     await m.reply_text(
@@ -35,6 +49,20 @@ async def start(c, m):
 
 @Client.on_message(filters.private & filters.incoming & filters.text)
 async def style_buttons(c, m, cb=False):
+
+        # text text
+    text = f"""දැන් {m.from_user.mention(style='md')} ඔයා ,
+
+** ඔයාට ඕන කරන වචන තේමාව තෝරන්න.
+
+** දැනට මාස් සතුව  පවතින වචන තේමා [word fronts] 40 පහත buttons වලින් පෙන්වා ඇත .
+
+**ඔයාට ඕන කරන තේමාව මෙතන නැත්නම් [Next ➡️] button එක තෝරන්න.
+
+** Developer by :** ❤️ ▷ [@Drfoxprojects]
+"""
+
+    # Buttons
     buttons = [[
         InlineKeyboardButton('𝚃𝚢𝚙𝚎𝚠𝚛𝚒𝚝𝚎𝚛', callback_data='style+typewriter'),
         InlineKeyboardButton('𝕆𝕦𝕥𝕝𝕚𝕟𝕖', callback_data='style+outline'),
