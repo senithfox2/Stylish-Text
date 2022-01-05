@@ -29,11 +29,10 @@ async def start(c, m):
     # Buttons
     buttons = [
         [
-            InlineKeyboardButton('👥 Group', url=f"https://t.me/senithlokithatk"),
+            InlineKeyboardButton('👥 Group', url=f"https://t.me/+rtH8TPotoxo2NGNl"),
             InlineKeyboardButton('Channel 📢', url=f"https://t.me/Drfoxprojects")
             ],[
-            InlineKeyboardButton('❤️ Credits', url=f"https://t.me/senith_0831"),
-            InlineKeyboardButton('GitHup 🤣', url=f"https://github.com/senithfox2")
+            InlineKeyboardButton('❤️ Credits', url=f"https://t.me/senith_0831")
             ],[
             InlineKeyboardButton('⚜️ vist my web site ⚜️', url=f"http://www.senithlokitha.tk")
             ],[
